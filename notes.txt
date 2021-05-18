@@ -1,0 +1,342 @@
+
+*** Everything in Python is object ***
+*** Every object contains set of methods ***
+
+objects
+-------
+
+
+number
+------
+number can be integer or decimal or hexa or octal
+a = 10
+aval = 3.44
+
+
+string
+-------
+string is defined in single or double or triple quotes
+
+aname = 'python programming'
+bname = "spark programming"
+cname = """
+java coding
+"""
+dname = '''scala'''
+
+
+list ( array in C )
+------------------
+list contains set of elements.
+Elements can be group of numbers or strings or any combination.
+combination : list of lists
+              list of tuples
+              list of dictionaries
+list is defined in []
+
+alist = [10,20,30,40]
+blist = ["python","perl","java"]
+clist = [10,343.33,"spark"]
+dlist = [[10,20],["python","pyspark"],alist]  # list of lists
+
+
+
+tuple  ( READ ONLY , IMMUTABLE )
+-----
+tuple contains set of elements.
+Elements can be group of numbers or strings or any combination.
+**** Elements inside TUPLE cannot be modified DIRECTLY ****
+combination : list of lists
+              list of tuples
+              list of dictionaries
+
+tuple elements are defined in ().
+
+atup = (10,45,43)
+btup = ("ML","DL","scala")
+ctup = (34,443.33,"unix")
+
+
+
+dictionary   ( replica of JSON )
+------------
+dictionary contains elements in key:value pairs
+dictionary elements are defined in {}.
+keys  :  key can be either number or string
+values: values can be number or string or list or tuple or dictionary
+
+syntax:     object = { key:value , key:value , key:value }
+Example:     book  = {"chap1":10 ,"chap2":20 ,"chap3":30 ,"chap1":1000 }
+             numbs = {1:2,3:4,5:6}
+            bookinfo = {"chap1":["Arthur",10,"UK"],"chap2":20 ,"chap3":{"book":"US" } }   # complex dictionary
+          
+
+
+set
+----
+set is UNORDERED collection of UNIQUE elements of SAME type.
+        --------              --------           -------
+
+set elements are defined in {}.
+
+aset = {10,20,30,10,10,10,10,10}
+
+
+
+
+
+comments
+--------
+
+single line comment : ( #)
+
+
+multi line comment:  The lines defined in between ''' and ''' are ignored by interpreter
+
+
+
+methods:
+---------
+methods are object specific.
+- string methods are different to list methods
+- . is used to used the access the object objects
+
+functions
+----------
+functions are common for all the objects
+
+- builtin functions
+- user defined functions
+
+
+builtin functions
+------------------
+print()
+help()
+range()
+type()
+isinstance()
+max()
+min()
+sum()
+zip()
+input()
+
+conversion functions/typecasting functions
+list()
+tuple()
+str()
+dict()
+set()
+int()
+float()
+octal()
+hex()
+
+
+statements
+------------
+
+conditional statements
+-------------------
+if condition
+if-else
+if-elif-elif... else
+
+
+control statements
+------------------
+while
+for
+
+
+jump statements
+---------------
+break
+continue
+
+
+operators
+----------
+
+
+arithmetic operators : + - * % /
+
+assignment operators ( ++ and -- are not allowed in python )
+--------------------
+val = 10
+val+=1       val = val + 1
+val-=10      val = val -10
+
+logical operators
+------------------
+and     if len(name) == 10  and name.isupper() :
+or      if  name.islower()  or  len(vname) == 3 :
+not     if not name.isupper()
+
+relational operators
+----------------------
+< > <= >= == !=                
+
+special operators
+---------------------
+in
+as
++
+*
+
+file handling
+----------------
+
+
+file formats
+-------------
+
+txt    -------- only text
+csv    -------- only text
+xls    ---------- third party tool
+doc    ---------- third party tool
+docx    ---------- third party tool
+mp3    ---------- third party tool
+jpg
+.dat    -------- only text
+gif
+png
+log    -------- only text
+html  
+rtf    -------- only text
+xlsx    ---------- third party tool
+pdf    ---------- third party tool
+elf    ---------- third party tool
+ppt    ---------- third party tool
+pptx    ---------- third party tool
+xml --------------- only text
+json    -------- only text
+yaml    -------- only text
+.con
+.bat
+
+
+- working with flat files ( .log .conf .csv .dat  .json .yaml .xml .... )
+-------------------------------------------------------
+- read  ( r)
+- write ( w )
+- append ( a)
+
+syntax : opening the file
+-------------------------------
+objectname = open(filename,mode)
+
+
+closing the file
+----------------
+object.close()
+
+
+writing to the file
+--------------------
+fobj = open("info.txt","w")
+fobj.write("python programming\n")
+
+fobj.close()
+
+case1 : If the file is already existing .. it overwrites the content
+case2 : If the file is not existing ...... file gets created
+
+
+read operation
+---------------
+
+- reading line by line
+- fobj.readlines()       : output will be in list format
+- fobj.read()            : output will be displayed as single strip
+- using csv library
+- using pandas library
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
