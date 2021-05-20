@@ -253,6 +253,286 @@ read operation
 - using csv library
 - using pandas library
 
+Exception handling
+-------------------
+
+There are 2 types of errors.
+
+
+1. syntax error
+2. semantic error or runtime error
+
+Handling the exception in the runtime is known as exception handling.
+
+python           Java/C++
+-------         -----------
+try                 try
+except              catch
+else              
+finally             finally
+raise               throw
+
+
+
+
+function | block | definition | subroutine | submodule
+
+
+user defined functions
+--------------------------
+-code reusability
+
+- Instead of writing the code again and again , the repeated code can be called as block and the block can be called by multiple times.
+
+passing arguments
+----------------------
+fixed arguments
+default arguments
+keyword arguments
+variable length arguments
+
+
+
+
+
+library | package | module
+----------------------------
+library contains set of pre defined code/files written by someone.
+
+Basically there are 2 types of libraries
+
+1. Built-in libraries
+
+2. third party libraries
+
+Built-in libraries : Builtin libraries are by default installed with the python which are generally used by
+                     everyone.(  json operations, csv operations , directory handling(deleting,listing,validating
+                                 the file, working with date and time , copying files, moving , mailing,
+                                 ftp, xml operations, yaml operations , downloading files  )
+
+
+Third party libraries: Depending on the requirement( excel operations, database operations,web applications,
+                         data analytics, ML , DL, Image processing, Networking )  developer  has to install
+                         the third party library from www.pypi.org or need to install manually or using PIP tool
+
+
+
+importing library
+--------------------------
+
+
+importing all the methods   ( all the methods are accessed with . operator )
+------------------------
+import math
+print(math.floor(34.3))  #34
+print(math.ceil(45.9))   # 46
+print(math.log(2) )
+
+
+importing library with alias
+-------------------------
+import matplotlib as m
+m.plot(x,y)
+
+
+importing required methods ONLY   ( since the methods are directly imported...     . operator is not required )
+--------------------------------
+from math import floor
+from math import floor,ceil,log
+print(floor(45.4))
+print(log(3))
+
+
+importing all the methods     ( since the methods are directly imported...     . operator is not required )
+------------------------
+from math import *
+print(floor(56.5))
+
+
+How to refer and understand documentation ?
+Every library has its own provided documentation with set of examples too.
+
+
+
+8000+  builtin libraries
+250000+ third party library
+
+builtin libraries
+-----------------------
+
+os            : os.listdir() os.remove() 
+sys           : system config information   sys.exit(0)
+urllib.request: working with http
+math          : mathematical operations
+random        : random numbers
+calendar
+smtplib       : sending mails
+ftplib        : ftp'ng the file
+telnetlib     :
+logging       : logging all the events
+shutil        : copy,move,rmtree ....
+filecmp       : comparing directories
+zipfile       : create/extract the zip files
+rarfile       : create/extract the tar files
+tarfile       : create/extract the tarfiles
+getpass       : shadowing the password
+json          : reading/writing json files
+csv           : reading/writing csv files
+xml        
+sysconfig     : system configuration
+collections   : working with dictionaries
+argparse      : passing args from command line
+optparse      : passing args from command line
+time          : working with date and time
+datetime      : working with date and time
+cryptography  : encrypting and decrypting the passwords  
+heapq         : performing array operations
+gzip          : reading gunzip files
+re            : validating the strings
+ipadresss     : validting ip address
+platform      : display platform information
+pathlib       : creating temp files
+threading     : for performing multi threading
+multiprocessing:
+subprocess    : invoking the system commands ( linux or dos commands)
+
+
+
+frequently used third party libraries
+---------------------------------------
+database related
+----------------
+pymysql   :  mysql
+cx_Oracle :  Oracle
+pymongo   :  MOngoDBB
+pymssql   : sql server
+
+
+web frameworks ( developing web applications)
+--------------
+django
+flask
+bottom
+
+analytics/machine learning
+---------------------------
+numpy
+scipy
+pandas
+seaborn
+plotly
+ggplot
+matplotlib   : visualizing data .. bar graph.. pie graph
+scikit-learn :  machine learning algorithms
+
+image processing
+---------------
+pillow
+opencv
+
+APIs ( REST API) ( web services )   ( SOAP services   REST APIs)
+-----
+urllib
+requests
+
+excel programming
+------------------
+openpyxl    : reading/write excel files
+xlsxwriter  : writing to excel file
+pyexcel
+xlrd
+python-docx : working with ms-word
+
+networking
+-----------
+paramiko   :  interacting with remote servers
+netmiko    :  connecting to router/switch
+pyping     :  ping any host or ip address
+
+
+
+web scrapping
+--------------
+beautifulsoup
+scrapy
+
+
+
+
+
+
+
+Write the python program to display list all the files and directories from the current directory with proper exception handling.
+------------------------------------------------------------------------------------------------------------
+
+write the python program to display ONLY files from the current directory with exception handling
+
+------------------------------------------------------------------------------------------------------------
+
+write the python program to display ONLY directories from the Desktop with exception handling
+
+------------------------------------------------------------------------------------------------------------
+
+Write the python program to display list all the files and directories from the current directory 
+and rewrite the output to the file  with proper exception handling.
+
+conditions:  
+-----------
+If the file is already existing then delete the file
+
+------------------------------------------------------------------------------------------------------------
+
+
+write a program to display all the files and directories separately from the current directory
+
+
+files
+------
+abc.py
+realestate.csv
+example.py
+h.
+
+
+directories
+--------------
+jsonfiles
+
+------------------------------------------------------------------------------------------------------------
+ Write a Python program to display ONLY .py files and its size as below from the current directory with proper formatting.
+
+------------------------------------------------------------------------------------------------------------
+ Write a Python program to display the below information.
+
+display the current user name
+display current working directory
+display Operating system name
+display process id of your running program
+display the current timestamp
+display yesterday’s date
+display tomorrow’s date
+display all the environment variables that are existing
+display the python executable path ( just like ‘which python3’ in Linux )
+
+------------------------------------------------------------------------------------------------------------
+
+Write a Python program to display the below information.
+– disk utilization of C:\ ( total , used and free space)
+– disk utilization of \tmp ( if using linux)
+– display CPU utilization
+– display Memory utilization
+
+------------------------------------------------------------------------------------------------------------
+
+Write a Python program to create 100 directories in the current directory.
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
