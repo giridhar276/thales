@@ -260,7 +260,7 @@ There are 2 types of errors.
 
 
 1. syntax error
-2. semantic error or runtime error
+2. semantic error or runtime error or logical error
 
 Handling the exception in the runtime is known as exception handling.
 
@@ -310,11 +310,13 @@ Built-in libraries : Builtin libraries are by default installed with the python 
                                  the file, working with date and time , copying files, moving , mailing,
                                  ftp, xml operations, yaml operations , downloading files  )
 
+C:\Users\gsripath\anaconda3\Lib
 
 Third party libraries: Depending on the requirement( excel operations, database operations,web applications,
-                         data analytics, ML , DL, Image processing, Networking )  developer  has to install
+                         data analytics, ML , DL, Image processing, Networking , cloud)  developer  has to install
                          the third party library from www.pypi.org or need to install manually or using PIP tool
 
+C:\Users\gsripath\anaconda3\Lib\site-packages
 
 
 importing library
@@ -355,7 +357,7 @@ Every library has its own provided documentation with set of examples too.
 
 
 8000+  builtin libraries
-250000+ third party library
+300000+ third party library
 
 builtin libraries
 -----------------------
@@ -420,6 +422,7 @@ numpy
 scipy
 pandas
 seaborn
+statistics
 plotly
 ggplot
 matplotlib   : visualizing data .. bar graph.. pie graph
@@ -532,8 +535,73 @@ Write a Python program to create 100 directories in the current directory.
 
 
 
+import re
+---
+-search
+-replace
+-split
+-find
+-findall
+
+The power of re is because of the metacharacter or wildcard characters
+
+^ :  beginning of the string
+     if re.search("^python",line):
+
+$ :  end of the string
+     if re.search("python$",line):
+ 
+* :  zero or more occurences of the preceding character
+     if re.search("pyt*hon",line):
+
+     python     valid
+     pytttthon  valid
+     pyhon      valid
+     pyttttthon valid
+
++  : one or more occuence of the preceding character
+     if re.search("pyt+hon",line):
 
 
+     python     valid
+     pytttthon  valid
+     pyhon      Invalid
+     pyttttthon valid
+
+
+?  : either zero or one occurence of preceding character
+     if re.search("pyt?hon",line):
+
+     python     valid
+     pytttthon  Invalid
+     pyhon      valid
+     pyttttthon Invalid
+
+.  :  any single character or symbol or digit
+     if re.search(".ython",line):
+
+
+() :  (pattern1|pattern2)
+
+       if re.search("(python|perl|unix)", line):
+       - display all the lines containing python or perl
+
+
+[] :  [ character classs ]
+      if re.search("[pymzq]ython",line):
+	 re.search("[a-z]qython",line):
+	 re.search("[a-zA-Z0-9\[\]\*]]ython",line):
+
+{}  :  {m,n}
+       {min,max}
+      if re.search("pyt{1,5}hon",line):      t should exist in the range of only 1 to 5
+      if re.search("pyt{1,}hon",line):      t should exist in the range of only 1 to max
+      if re.search("pyt{5}hon",line):         should be exactly defined for ONLY 5 times
+
+\d \s \w : white space characters
+\d - digit
+\s - space
+\w - word
 
 
 
