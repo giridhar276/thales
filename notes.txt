@@ -460,8 +460,12 @@ beautifulsoup
 scrapy
 
 
-
-
+cloud
+------
+oci   : Oracle cloud infrastructure
+boto3 : aws infrastructure
+gcp   : Googld cloud
+azure
 
 
 
